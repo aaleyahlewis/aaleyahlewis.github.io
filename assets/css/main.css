@@ -89,7 +89,7 @@ body {
 	}
 	/* Add a color to the active/current link */
 	.topnav a.active a:focus{
-	background-color: #04AA6D;
+	background-color: #73339E;
 	color: white;
 	outline: none;
 	}
