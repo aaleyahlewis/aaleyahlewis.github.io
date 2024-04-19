@@ -2587,7 +2587,7 @@ input, select, textarea {
 		.button:disabled {
 			background-color: #73339E !important;
 			border-color: #73339E !important;
-			color: #b2b2b2 !important;
+			color: #73339E !important;
 			cursor: default;
 		}
 
