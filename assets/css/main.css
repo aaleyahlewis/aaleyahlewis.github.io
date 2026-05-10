@@ -1836,6 +1836,63 @@ input, select, textarea {
 		font-size: 2em;
 	}
 
+header.major.intro-hero {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-flex-direction: column;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -moz-align-items: flex-start;
+  -webkit-align-items: flex-start;
+  -ms-align-items: flex-start;
+  align-items: flex-start;
+  gap: 0;
+  margin-bottom: 3rem;
+  text-align: left;
+}
+header.major.intro-hero p,
+header.major.intro-hero h2 {
+  font-family: "Montserrat", "Source Sans Pro", Helvetica, sans-serif;
+}
+header.major.intro-hero .intro-hero__greeting {
+  color: #6b7280;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.08;
+  margin: 0 0 0.35rem 0;
+  max-width: 100%;
+  padding: 0;
+}
+header.major.intro-hero .intro-hero__name {
+  color: #73339e;
+  font-size: clamp(2.65rem, 8vw, 4.25rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  margin: 0;
+  max-width: 100%;
+  padding: 0;
+}
+header.major.intro-hero .intro-hero__tagline {
+  color: #6b7280;
+  font-size: clamp(2.05rem, 6vw, 3.4rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  margin: 0;
+  max-width: 100%;
+  padding: 0.08em 0 0 0;
+}
+@media screen and (max-width: 480px) {
+  header.major.intro-hero {
+    margin-bottom: 2.5rem;
+  }
+}
+
+
 /* Form */
 
 	form {
