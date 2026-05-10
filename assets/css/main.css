@@ -164,7 +164,7 @@ input, select, textarea {
 
 	strong, b {
 		color: black;
-		font-weight: 400;
+		font-weight: 700;
 	}
 
 	em, i {
@@ -1869,6 +1869,17 @@ header.major.intro-hero .intro-hero__greeting {
 header.major.intro-hero .intro-hero__name {
   color: #73339e;
   font-size: clamp(2.10rem, 6vw, 4.00rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  margin: 0;
+  max-width: 100%;
+  padding: 0;
+}
+}
+header.major.intro-hero .intro-hero__jobtitle {
+  color: #73339e;
+  font-size: clamp(1.95rem, 5vw, 3.00rem);
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1;
