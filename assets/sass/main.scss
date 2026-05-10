@@ -374,6 +374,120 @@ $size-header-pad: 4em;
 		}
 	}
 
+&.major.intro-hero {
+			@include vendor('display', 'flex');
+			@include vendor('flex-direction', 'column');
+			@include vendor('align-items', 'flex-start');
+			gap: 0;
+			text-align: left;
+			margin-bottom: 3rem;
+
+			@include breakpoint('<=xsmall') {
+				margin-bottom: 2.5rem;
+			}
+
+			p,
+			h2 {
+				font-family: 'Montserrat', 'Source Sans Pro', Helvetica, sans-serif;
+			}
+
+			.intro-hero__greeting {
+				color: #6b7280;
+				font-size: 1.25rem;
+				font-weight: 500;
+				line-height: 1.08;
+				margin: 0 0 0.35rem 0;
+				max-width: 100%;
+				padding: 0;
+			}
+
+			.intro-hero__name {
+				color: #73339e;
+				font-size: clamp(2.65rem, 8vw, 4.25rem);
+				font-weight: 700;
+				letter-spacing: -0.02em;
+				line-height: 1;
+				margin: 0;
+				max-width: 100%;
+				padding: 0;
+			}
+
+			.intro-hero__tagline {
+				color: #6b7280;
+				font-size: clamp(2.05rem, 6vw, 3.4rem);
+				font-weight: 700;
+				letter-spacing: -0.02em;
+				line-height: 1;
+				margin: 0;
+				max-width: 100%;
+				padding: 0.08em 0 0 0;
+			}
+		}
+	}
+
+/* Research interests (chip list — HCI / design audience) */
+
+	#ResearchInterest.research-interests {
+
+		.research-interests__header.major {
+			margin-bottom: (_size(element-margin) * 0.85);
+
+			h2.research-interests__title {
+				margin-bottom: 0;
+			}
+		}
+
+		.research-interests__lead {
+			color: #64748b;
+			font-size: 0.98rem;
+			font-weight: 400;
+			line-height: 1.62;
+			margin: (_size(element-margin) * 0.35) 0 0 0;
+			max-width: 42rem;
+		}
+
+		.research-interests__topics {
+			@include vendor('display', 'flex');
+			@include vendor('flex-wrap', 'wrap');
+			gap: 0.62rem 0.72rem;
+			list-style: none;
+			margin: 0;
+			padding: (_size(element-margin) * 0.35) 0 0 0;
+
+			li.research-interests__pill {
+				background: linear-gradient(180deg, #ffffff 0%, #fafbfc 100%);
+				border-radius: 9999px;
+				border: 1px solid #e2e8f0;
+				box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+				color: #334155;
+				font-family: 'Montserrat', 'Source Sans Pro', Helvetica, sans-serif;
+				font-size: 0.88rem;
+				font-weight: 600;
+				letter-spacing: 0.04em;
+				line-height: 1.2;
+				margin: 0;
+				padding: 0.62em 1.28em;
+				text-transform: none;
+				@include vendor('transition',
+					'border-color #{_duration(transition)} ease-out, '
+					'box-shadow #{_duration(transition)} ease-out, '
+					'color #{_duration(transition)} ease-out');
+
+				&:hover {
+					border-color: rgba(115, 51, 158, 0.45);
+					box-shadow:
+						0 4px 14px rgba(115, 51, 158, 0.12),
+						0 0 0 1px rgba(115, 51, 158, 0.08);
+					color: #1e293b;
+				}
+
+				@media (prefers-reduced-motion: reduce) {
+					@include vendor('transition', 'none');
+				}
+			}
+		}
+	}
+
 /* Form */
 
 	form {
