@@ -1850,7 +1850,7 @@ header.major.intro-hero {
   -ms-align-items: flex-start;
   align-items: flex-start;
   gap: 0;
-  margin-bottom: 5rem;
+  margin-bottom: 6rem;
   text-align: left;
 }
 header.major.intro-hero p,
@@ -1888,7 +1888,7 @@ header.major.intro-hero .intro-hero__tagline {
 }
 @media screen and (max-width: 480px) {
   header.major.intro-hero {
-    margin-bottom: 2.5rem;
+    margin-bottom: 3.5rem;
   }
 }
 
