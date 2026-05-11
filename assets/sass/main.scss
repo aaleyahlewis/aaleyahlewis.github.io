@@ -1653,7 +1653,7 @@ $size-header-pad: 4em;
 
 	#main {
 		margin-left: $size-header-width;
-		max-width: 66em;
+		max-width: 63em;
 		padding: ($size-header-pad * 2) 3em $size-header-pad 3em;
 		width: calc(100% - #{$size-header-width});
 
