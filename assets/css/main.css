@@ -3282,7 +3282,7 @@ header.major.intro-hero .intro-hero__tagline {
 
 	#main {
   		margin-left: 28%;
- 		max-width: 60em;
+ 		max-width: 58em;
 		/* first one adjusts height of where the about me starts */
   		padding: 8em 3em 4em 3em;
   		width: calc(100% - 28%);
@@ -3626,8 +3626,8 @@ header.major.intro-hero .intro-hero__tagline {
 		/* Main */
 
 			#main {
-				margin-left: 30%;
-				max-width: none;
+				margin-left: 28%;
+				max-width: 58;
 				padding: 6em 3em 3em 3em;
 				width: calc(100% - 30%);
 			}
