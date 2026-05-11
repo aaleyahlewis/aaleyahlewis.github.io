@@ -346,7 +346,7 @@ $size-header-pad: 4em;
 	#headerNav {
 		background: #ffffff;
 		overflow: visible;
-		padding: 1.35rem 1rem;
+		padding: 1.85rem 1rem;
 	}
 
 	#nav {
@@ -370,7 +370,7 @@ $size-header-pad: 4em;
 		}
 
 		a {
-			border: 0;
+			border: 2px solid transparent;
 			border-radius: 999px;
 			color: #555555;
 			display: inline-block;
@@ -379,7 +379,7 @@ $size-header-pad: 4em;
 			font-weight: 700;
 			letter-spacing: 0.16em;
 			line-height: 1;
-			padding: 0.95rem 1.35rem;
+			padding: 0.78rem 1.25rem;
 			text-decoration: none;
 			text-transform: uppercase;
 			@include vendor('transition', 'background-color #{_duration(transition)} ease, box-shadow #{_duration(transition)} ease, color #{_duration(transition)} ease');
@@ -389,7 +389,8 @@ $size-header-pad: 4em;
 			&.is-active,
 			&[aria-current='page'] {
 				background: #f6effa;
-				box-shadow: 0 0 0 2px #d7b3ee;
+				border-color: #d7b3ee;
+				box-shadow: none;
 				color: #73339e !important;
 			}
 
