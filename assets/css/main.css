@@ -3100,6 +3100,10 @@ header.major.intro-hero .intro-hero__tagline {
 			-webkit-flex-grow: 1;
 			-ms-flex-grow: 1;
 			flex-grow: 1;
+			font-family: "Montserrat", "Source Sans Pro", Helvetica, sans-serif;
+  			font-weight: 600;
+  			letter-spacing: -0.01em;
+  			line-height: 1.55;
 			margin: 0 0 2em 0;
 			padding-right: 27px;
 		}
@@ -3115,6 +3119,8 @@ header.major.intro-hero .intro-hero__tagline {
 
 		#header strong, #header b {
 			color: black;
+			font-weight: 700;
+  			text-shadow: none;
 		}
 
 		#header h2, #header h3, #header h4, #header h5, #header h6 {
@@ -3123,8 +3129,11 @@ header.major.intro-hero .intro-hero__tagline {
 
 		#header h1 {
 			color: rgba(255, 255, 255, 0.5);
-			font-size: 1.35em;
-			line-height: 1.75em;
+			font-family: "Montserrat", "Source Sans Pro", Helvetica, sans-serif;
+  			font-size: 1.45em;
+  			font-weight: 600;
+			letter-spacing: -0.02em;
+ 			line-height: 1.55em;
 			margin: 0;
 		}
 
