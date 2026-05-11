@@ -1880,7 +1880,7 @@ header.major.intro-hero .intro-hero__name {
 }
 header.major.intro-hero .intro-hero__jobtitle {
   color: #73339e;
-  font-size: clamp(1.95rem, 5vw, 3.00rem);
+  font-size: clamp(1.55rem, 5vw, 3.00rem);
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1;
