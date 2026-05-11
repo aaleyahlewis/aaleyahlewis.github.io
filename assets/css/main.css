@@ -3249,7 +3249,7 @@ header.major.intro-hero .intro-hero__tagline {
 
 	#main {
   		margin-left: 28%;
- 		max-width: 66em;
+ 		max-width: 63em;
 		/* first one adjusts height of where the about me starts */
   		padding: 8em 3em 4em 3em;
   		width: calc(100% - 28%);
