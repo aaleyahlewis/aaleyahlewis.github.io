@@ -2115,6 +2115,165 @@ header.major.intro-hero .intro-hero__tagline {
   }
 }
 
+/* Contact panel */
+#getintouch.contact-panel {
+  padding-bottom: 1rem;
+}
+
+#getintouch.contact-panel .contact-panel__card {
+  align-items: center;
+  background:
+    radial-gradient(circle at top left, rgba(215, 179, 238, 0.32), transparent 35%),
+    linear-gradient(135deg, #ffffff 0%, #fbf8fd 100%);
+  border: 1px solid #ece7f2;
+  border-radius: 22px;
+  box-shadow: 0 14px 44px rgba(15, 23, 42, 0.07);
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: minmax(0, 1.15fr) minmax(17rem, 0.85fr);
+  padding: 2rem;
+}
+
+#getintouch.contact-panel .contact-panel__header {
+  margin: 0;
+}
+
+#getintouch.contact-panel .contact-panel__eyebrow {
+  color: #73339e;
+  font-family: "Montserrat", "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  line-height: 1;
+  margin: 0 0 0.75rem 0;
+  text-transform: uppercase;
+}
+
+#getintouch.contact-panel .contact-panel__header h2 {
+  color: #1f2937;
+  margin-bottom: 0.75rem;
+}
+
+#getintouch.contact-panel .contact-panel__intro {
+  color: #64748b;
+  font-size: 1rem;
+  line-height: 1.65;
+  margin: 0;
+  max-width: 38rem;
+}
+
+#getintouch.contact-panel .contact-panel__details {
+  font-style: normal;
+}
+
+#getintouch.contact-panel .contact-panel__email {
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #e8ddf0;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+  color: #334155;
+  display: flex;
+  gap: 1rem;
+  padding: 1.1rem;
+  text-decoration: none;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#getintouch.contact-panel .contact-panel__email:hover,
+#getintouch.contact-panel .contact-panel__email:focus-visible {
+  border-color: #d7b3ee;
+  box-shadow: 0 12px 30px rgba(115, 51, 158, 0.12);
+  transform: translateY(-2px);
+}
+
+#getintouch.contact-panel .contact-panel__email:focus-visible {
+  outline: 3px solid rgba(115, 51, 158, 0.3);
+  outline-offset: 4px;
+}
+
+#getintouch.contact-panel .contact-panel__icon {
+  align-items: center;
+  background: #f6effa;
+  border-radius: 50%;
+  color: #73339e;
+  display: inline-flex;
+  flex: 0 0 3rem;
+  height: 3rem;
+  justify-content: center;
+  width: 3rem;
+}
+
+#getintouch.contact-panel .contact-panel__label {
+  color: #64748b;
+  display: block;
+  font-family: "Montserrat", "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  line-height: 1;
+  margin-bottom: 0.45rem;
+  text-transform: uppercase;
+}
+
+#getintouch.contact-panel .contact-panel__value {
+  color: #1f2937;
+  display: block;
+  font-size: 1.02rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+#getintouch.contact-panel .contact-panel__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+#getintouch.contact-panel .contact-panel__button {
+  background: #73339e;
+  border: 2px solid #73339e;
+  border-radius: 999px;
+  color: #ffffff !important;
+  display: inline-block;
+  font-family: "Montserrat", "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  padding: 0.85rem 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+#getintouch.contact-panel .contact-panel__button:hover,
+#getintouch.contact-panel .contact-panel__button:focus-visible {
+  background: #5f2786;
+  border-color: #5f2786;
+  transform: translateY(-1px);
+}
+
+#getintouch.contact-panel .contact-panel__button--ghost {
+  background: transparent;
+  color: #73339e !important;
+}
+
+#getintouch.contact-panel .contact-panel__button--ghost:hover,
+#getintouch.contact-panel .contact-panel__button--ghost:focus-visible {
+  background: #f6effa;
+  border-color: #d7b3ee;
+  color: #73339e !important;
+}
+
+@media screen and (max-width: 736px) {
+  #getintouch.contact-panel .contact-panel__card {
+    grid-template-columns: 1fr;
+    padding: 1.4rem;
+  }
+}
+
 /* Form */
 
 	form {
