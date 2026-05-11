@@ -2340,6 +2340,39 @@ header.major.intro-hero .intro-hero__tagline {
   }
 }
 
+/* Publication PDF buttons */
+#publication a[href$=".pdf"] {
+  background: #f6effa;
+  border: 1px solid #d7b3ee;
+  border-radius: 999px;
+  color: #73339e !important;
+  display: inline-block;
+  font-family: "Montserrat", "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  margin-left: 0.35rem;
+  padding: 0.42rem 0.68rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+#publication a[href$=".pdf"]:hover,
+#publication a[href$=".pdf"]:focus-visible {
+  background: #73339e;
+  border-color: #73339e;
+  color: #ffffff !important;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  transform: translateY(-1px);
+}
+
+#publication a[href$=".pdf"]:focus-visible {
+  outline: 3px solid rgba(115, 51, 158, 0.3);
+  outline-offset: 3px;
+}
 
 /* Form */
 
