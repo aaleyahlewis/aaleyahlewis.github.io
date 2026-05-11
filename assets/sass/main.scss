@@ -1578,11 +1578,17 @@ $size-header-pad: 4em;
 
 		> .inner {
 			@include vendor('flex-grow', '1');
+			font-family: 'Montserrat', 'Source Sans Pro', Helvetica, sans-serif;
+			font-weight: 600;
+			letter-spacing: -0.01em;
+			line-height: 1.55;
 			margin: 0 0 ($size-header-pad * 0.5) 0;
 		}
 
 		strong, b {
 			color: _palette(accent2, fg-bold);
+			font-weight: 700;
+			text-shadow: none;
 		}
 
 		h2, h3, h4, h5, h6 {
@@ -1591,8 +1597,11 @@ $size-header-pad: 4em;
 
 		h1 {
 			color: _palette(accent2, fg);
-			font-size: 1.35em;
-			line-height: 1.75em;
+			font-family: 'Montserrat', 'Source Sans Pro', Helvetica, sans-serif;
+			font-size: 1.45em;
+			font-weight: 600;
+			letter-spacing: -0.02em;
+			line-height: 1.55em;
 			margin: 0;
 		}
 
