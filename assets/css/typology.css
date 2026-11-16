@@ -125,6 +125,33 @@ body:not(.typology-page) #main > section:not(#one) header.major h2 {
   z-index: 1;
 }
 
+.typology-page #header .inner {
+  color: #000000;
+}
+
+.typology-page #header .inner h1 {
+  color: #000000;
+}
+
+.typology-sidebar__affiliation {
+  line-height: 1.55;
+  margin: 0.8rem 0 0;
+}
+
+.typology-sidebar__icons {
+  margin: 1rem 0 0;
+  text-align: center;
+}
+
+.typology-sidebar__icons a {
+  color: #000000;
+}
+
+.typology-sidebar__icons a:focus-visible {
+  outline: 3px solid rgba(115, 51, 158, 0.55);
+  outline-offset: 4px;
+}
+
 .typology-page #main {
   padding-top: 4.5rem;
 }
