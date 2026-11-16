@@ -3021,6 +3021,10 @@ header.major.intro-hero .intro-hero__tagline {
 		white-space: nowrap;
 	}
 
+	#one .actions .button {
+		border-radius: 0;
+	}
+
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
@@ -3658,8 +3662,8 @@ header.major.intro-hero .intro-hero__tagline {
 
 			#footer {
 				background-attachment: scroll;
-				background-color: #1f1815;
-				background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+				background-color: #ffffff;
+				background-image: none;
 				background-position: top left,						bottom center;
 				background-repeat: repeat,							no-repeat;
 				background-size: auto,							cover;
