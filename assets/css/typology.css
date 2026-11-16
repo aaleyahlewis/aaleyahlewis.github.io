@@ -168,7 +168,7 @@ body:not(.typology-page) #main > section:not(#one) header.major h2 {
   padding-top: 4.5rem;
 }
 
-.typology-post {
+#main > article.typology-post {
   background: transparent;
   border: 0;
   border-radius: 0;
