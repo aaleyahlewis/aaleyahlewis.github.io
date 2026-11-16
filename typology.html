@@ -46,29 +46,7 @@
 					<p>More details and reflections will be added as the work develops.</p>
 				</div>
 
-				<div class="typology-post__reaction">
-					<button class="typology-like" type="button" aria-pressed="false" aria-label="Like this post">
-						<span class="fas fa-thumbs-up" aria-hidden="true"></span>
-						<span class="typology-like__label">Like</span>
-						<span class="typology-like__count" aria-hidden="true">0</span>
-					</button>
-					<p class="typology-post__note" aria-live="polite">Preview only: likes are not saved or shared.</p>
-				</div>
 			</article>
 		</main>
-
-		<script>
-			const likeButton = document.querySelector('.typology-like');
-			const likeCount = likeButton.querySelector('.typology-like__count');
-			let liked = false;
-
-			likeButton.addEventListener('click', () => {
-				liked = !liked;
-				likeButton.setAttribute('aria-pressed', String(liked));
-				likeButton.querySelector('.typology-like__label').textContent = liked ? 'Liked' : 'Like';
-				likeCount.textContent = liked ? '1' : '0';
-				likeButton.setAttribute('aria-label', liked ? 'Unlike this post' : 'Like this post');
-			});
-		</script>
 	</body>
 </html>
