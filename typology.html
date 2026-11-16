@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Context-Sensitive Access | Aaleyah Lewis</title>
+		<link rel="icon" type="image/png" href="images/prof1.png">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="A short preview of Aaleyah Lewis's Context-Sensitive Access project." />
+		<link rel="stylesheet" href="assets/css/main.css?v=15" />
+		<link rel="stylesheet" href="assets/css/typology.css" />
+	</head>
+	<body class="is-preload typology-page">
+		<header id="header">
+			<div class="inner1" style="text-align:center">
+				<img src="images/prof1.png" alt="Aaleyah Lewis" width="250" height="227" />
+			</div>
+			<div class="inner">
+				<h1 style="font-size:30px"><strong>Aaleyah Lewis</strong></h1>
+				<a href="index.html">Back to my portfolio</a>
+			</div>
+		</header>
+
+		<header id="headerNav">
+			<nav id="nav" aria-label="Main navigation">
+				<ul class="topnav">
+					<li><a href="index.html#CurrentWork">Selected Projects</a></li>
+					<li><a href="index.html#publication">Publications</a></li>
+					<li><a href="index.html#getintouch">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="main">
+			<article class="typology-post">
+				<p class="typology-post__eyebrow">Selected project <span aria-hidden="true">/</span> Blog</p>
+				<h1 class="typology-post__title">Context-Sensitive Access: Examining Identity Navigation in AI-Mediated Interactions Among Multicultural People with Disabilities</h1>
+				<figure class="typology-post__figure">
+					<img src="images/Context-sensitiveAccess2.png" alt="Illustration of diverse disabled people whose identity, communication goals, accessibility needs, contexts, barriers, and possibilities flow into an AI system for AI-mediated access." />
+					<figcaption>A project about identity navigation in AI-mediated interactions among multicultural people with disabilities.</figcaption>
+				</figure>
+				<p class="typology-post__authors">Project notes by Aaleyah Lewis</p>
+
+				<div class="typology-post__body">
+					<p>This project explores how, where, and why multilingual and multicultural people with disabilities navigate identity as part of AI-mediated accessibility. People may adjust how they communicate to fit different tools, settings, and goals.</p>
+					<p>For now, this is a placeholder for a closer look at the project’s questions, methods, and early ideas. We are interested in how AI might support or complicate these choices, and what it could mean to center user agency.</p>
+					<p>More details and reflections will be added as the work develops.</p>
+				</div>
+
+				<div class="typology-post__reaction">
+					<button class="typology-like" type="button" aria-pressed="false" aria-label="Like this post">
+						<span class="fas fa-thumbs-up" aria-hidden="true"></span>
+						<span class="typology-like__label">Like</span>
+						<span class="typology-like__count" aria-hidden="true">0</span>
+					</button>
+					<p class="typology-post__note" aria-live="polite">Preview only: likes are not saved or shared.</p>
+				</div>
+			</article>
+		</main>
+
+		<script>
+			const likeButton = document.querySelector('.typology-like');
+			const likeCount = likeButton.querySelector('.typology-like__count');
+			let liked = false;
+
+			likeButton.addEventListener('click', () => {
+				liked = !liked;
+				likeButton.setAttribute('aria-pressed', String(liked));
+				likeButton.querySelector('.typology-like__label').textContent = liked ? 'Liked' : 'Like';
+				likeCount.textContent = liked ? '1' : '0';
+				likeButton.setAttribute('aria-label', liked ? 'Unlike this post' : 'Like this post');
+			});
+		</script>
+	</body>
+</html>

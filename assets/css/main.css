@@ -1937,10 +1937,10 @@ header.major.intro-hero .intro-hero__tagline {
 }
 
 #ResearchInterest.research-interests .research-interests__topics li.research-interests__pill {
-  background: linear-gradient(180deg, #ffffff 0%, #fafbfc 100%);
-  border: 1px solid #e2e8f0;
-  border-radius: 9999px;
-  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
   color: #334155;
   font-family: "Montserrat", "Source Sans Pro", Helvetica, sans-serif;
   font-size: 0.88rem;
@@ -1948,25 +1948,14 @@ header.major.intro-hero .intro-hero__tagline {
   letter-spacing: 0.04em;
   line-height: 1.2;
   margin: 0;
-  padding: 0.62em 1.28em;
-  -moz-transition: border-color 0.2s ease-out, box-shadow 0.2s ease-out, color 0.2s ease-out;
-  -webkit-transition: border-color 0.2s ease-out, box-shadow 0.2s ease-out, color 0.2s ease-out;
-  -ms-transition: border-color 0.2s ease-out, box-shadow 0.2s ease-out, color 0.2s ease-out;
-  transition: border-color 0.2s ease-out, box-shadow 0.2s ease-out, color 0.2s ease-out;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  #ResearchInterest.research-interests .research-interests__topics li.research-interests__pill {
-    transition: none;
-  }
-}
-
-#ResearchInterest.research-interests .research-interests__topics li.research-interests__pill:hover {
-  border-color: rgba(115, 51, 158, 0.45);
-  box-shadow:
-    0 4px 14px rgba(115, 51, 158, 0.12),
-    0 0 0 1px rgba(115, 51, 158, 0.08);
-  color: #1e293b;
+#ResearchInterest.research-interests .research-interests__topics li.research-interests__pill:not(:first-child)::before {
+  color: #73339e;
+  content: "|";
+  display: inline-block;
+  margin-right: 0.55rem;
 }
 
 #headerNav {
@@ -2063,7 +2052,7 @@ header.major.intro-hero .intro-hero__tagline {
   background: #ffffff;
   border: 1px solid #ece7f2;
   border-left: 4px solid #d7b3ee;
-  border-radius: 16px;
+  border-radius: 0;
   box-shadow: 0 8px 28px rgba(15, 23, 42, 0.05);
   display: grid;
   gap: 0.9rem;
@@ -2082,7 +2071,7 @@ header.major.intro-hero .intro-hero__tagline {
 #Highlights.highlights .highlight-card__year {
   background: #f6effa;
   border: 1px solid #d7b3ee;
-  border-radius: 999px;
+  border-radius: 0;
   color: #73339e;
   display: inline-block;
   font-family: "Montserrat", "Source Sans Pro", Helvetica, sans-serif;
@@ -2122,16 +2111,9 @@ header.major.intro-hero .intro-hero__tagline {
 
 #getintouch.contact-panel .contact-panel__card {
   align-items: center;
-  background:
-    radial-gradient(circle at top left, rgba(215, 179, 238, 0.32), transparent 35%),
-    linear-gradient(135deg, #ffffff 0%, #fbf8fd 100%);
-  border: 1px solid #ece7f2;
-  border-radius: 22px;
-  box-shadow: 0 14px 44px rgba(15, 23, 42, 0.07);
   display: grid;
   gap: 2rem;
   grid-template-columns: minmax(0, 1.15fr) minmax(17rem, 0.85fr);
-  padding: 2rem;
 }
 
 #getintouch.contact-panel .contact-panel__header {
@@ -2168,23 +2150,17 @@ header.major.intro-hero .intro-hero__tagline {
 
 #getintouch.contact-panel .contact-panel__email {
   align-items: center;
-  background: #ffffff;
-  border: 1px solid #e8ddf0;
-  border-radius: 18px;
-  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
   color: #334155;
   display: flex;
   gap: 1rem;
-  padding: 1.1rem;
   text-decoration: none;
-  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 #getintouch.contact-panel .contact-panel__email:hover,
 #getintouch.contact-panel .contact-panel__email:focus-visible {
-  border-color: #d7b3ee;
-  box-shadow: 0 12px 30px rgba(115, 51, 158, 0.12);
-  transform: translateY(-2px);
+  color: #1f2937;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
 }
 
 #getintouch.contact-panel .contact-panel__email:focus-visible {
@@ -2270,7 +2246,6 @@ header.major.intro-hero .intro-hero__tagline {
 @media screen and (max-width: 736px) {
   #getintouch.contact-panel .contact-panel__card {
     grid-template-columns: 1fr;
-    padding: 1.4rem;
   }
 }
 
@@ -2285,13 +2260,14 @@ header.major.intro-hero .intro-hero__tagline {
 #CurrentWork .selected-project-media__figure {
   background: #fbf8fd;
   border: 1px solid #ece7f2;
-  border-radius: 16px;
+  border-radius: 0;
   box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
   margin: 0;
   overflow: hidden;
 }
 
 #CurrentWork .selected-project-media__figure img {
+  border-radius: 0;
   display: block;
   height: auto;
   width: 100%;
@@ -2786,6 +2762,11 @@ header.major.intro-hero .intro-hero__tagline {
 
 			ul.icons li .icon:before {
 				font-size: 1.5em;
+			}
+
+			#footer .icons a:focus-visible {
+				outline: 3px solid rgba(115, 51, 158, 0.55);
+				outline-offset: 4px;
 			}
 
 /* Labeled Icons */
