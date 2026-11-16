@@ -2069,8 +2069,8 @@ header.major.intro-hero .intro-hero__tagline {
 }
 
 #Highlights.highlights .highlight-card__year {
-  background: #f6effa;
-  border: 1px solid #d7b3ee;
+  background: transparent;
+  border: 0;
   border-radius: 0;
   color: #73339e;
   display: inline-block;
