@@ -2335,6 +2335,29 @@ header.major.intro-hero .intro-hero__tagline {
   transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
+#publication .google-scholar-profile {
+  color: #73339e;
+  font-family: "Montserrat", "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  line-height: 1.2;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#publication .google-scholar-profile:hover,
+#publication .google-scholar-profile:focus-visible {
+  color: #73339e;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+#publication .google-scholar-profile:focus-visible {
+  outline: 3px solid rgba(115, 51, 158, 0.3);
+  outline-offset: 3px;
+}
+
 #publication a[href$=".pdf"]:hover,
 #publication a[href$=".pdf"]:focus-visible {
   background: #73339e;
