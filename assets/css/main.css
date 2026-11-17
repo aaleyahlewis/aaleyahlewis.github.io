@@ -2316,7 +2316,7 @@ header.major.intro-hero .intro-hero__tagline {
   }
 }
 
-/* Publication PDF buttons */
+/* Publication PDF links */
 #publication a[href$=".pdf"] {
   background: #f6effa;
   border: 1px solid #d7b3ee;
@@ -2333,6 +2333,16 @@ header.major.intro-hero .intro-hero__tagline {
   text-decoration: none;
   text-transform: uppercase;
   transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+#publication a[href$=".pdf"]:hover,
+#publication a[href$=".pdf"]:focus-visible {
+  background: #73339e;
+  border-color: #73339e;
+  color: #ffffff !important;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  transform: translateY(-1px);
 }
 
 #publication .google-scholar-profile {
@@ -2358,14 +2368,15 @@ header.major.intro-hero .intro-hero__tagline {
   outline-offset: 3px;
 }
 
-#publication a[href$=".pdf"]:hover,
-#publication a[href$=".pdf"]:focus-visible {
-  background: #73339e;
-  border-color: #73339e;
-  color: #ffffff !important;
-  text-decoration: underline;
-  text-underline-offset: 0.18em;
-  transform: translateY(-1px);
+#publication .publication-venue {
+  color: #73339e;
+  font-weight: 700;
+}
+
+#publication .publication-entry {
+  border-left: 4px solid #d7b3ee;
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
 }
 
 #publication a[href$=".pdf"]:focus-visible {
