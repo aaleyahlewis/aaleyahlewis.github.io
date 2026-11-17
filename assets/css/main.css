@@ -2050,10 +2050,10 @@ header.major.intro-hero .intro-hero__tagline {
 #Highlights.highlights .highlight-card {
   align-items: start;
   background: #ffffff;
-  border: 1px solid #ece7f2;
+  border: 0;
   border-left: 4px solid #d7b3ee;
   border-radius: 0;
-  box-shadow: 0 8px 28px rgba(15, 23, 42, 0.05);
+  box-shadow: none;
   display: grid;
   gap: 0.9rem;
   grid-template-columns: 6.5rem 1fr;
@@ -2064,7 +2064,7 @@ header.major.intro-hero .intro-hero__tagline {
 #Highlights.highlights .highlight-card:hover,
 #Highlights.highlights .highlight-card:focus-within {
   border-left-color: #73339e;
-  box-shadow: 0 12px 34px rgba(115, 51, 158, 0.12);
+  box-shadow: none;
   transform: translateY(-2px);
 }
 
